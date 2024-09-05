@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 15, in <module>
+    device = mx.gpu()
+            ^^^^^^^^
+TypeError: 'DeviceType' object is not callable

@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 137, in <module>
+    agent = DistributionalGFlowNet(input_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 49, in __init__
+    self.policy_net = TransformerNetwork(input_size, 4)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 37, in __init__
+    self.layers = [nn.TransformerEncoderLayer(hidden_size) for _ in range(num_layers)]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 37, in <listcomp>
+    self.layers = [nn.TransformerEncoderLayer(hidden_size) for _ in range(num_layers)]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TransformerEncoderLayer.__init__() missing 1 required positional argument: 'num_heads'
+Using device: Device(gpu, 0)

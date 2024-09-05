@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 13, in <module>
+    device = mx.gpu() if mx.gpu_available() else mx.cpu()
+                         ^^^^^^^^^^^^^^^^
+AttributeError: module 'mlx.core' has no attribute 'gpu_available'

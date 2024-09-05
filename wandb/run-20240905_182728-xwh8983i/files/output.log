@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 138, in <module>
+    agent.train(env)
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 97, in train
+    action = self.sample_action(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 57, in sample_action
+    logits = self.policy_net(state)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 43, in __call__
+    x = layer(x)
+        ^^^^^^^^
+TypeError: TransformerEncoderLayer.__call__() missing 1 required positional argument: 'mask'
+Using device: Device(gpu, 0)

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 13, in <module>
+    mx.set_default_device(mx.gpu if mx.gpu.is_available() else mx.cpu)
+                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DeviceType' object has no attribute 'is_available'

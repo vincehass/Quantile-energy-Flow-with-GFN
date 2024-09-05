@@ -1,0 +1,13 @@
+
+Using device: Device(gpu, 0)
+Traceback (most recent call last):
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 139, in <module>
+    agent = DistributionalGFlowNet(input_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 51, in __init__
+    self.policy_net = TransformerNetwork(input_size, 4)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 38, in __init__
+    nn.TransformerEncoderLayer(d_model=128, nhead=num_heads),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TransformerEncoderLayer.__init__() got an unexpected keyword argument 'd_model'

@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 141, in <module>
+    agent.train(env)
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 100, in train
+    action = self.sample_action(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 60, in sample_action
+    logits = self.policy_net(state)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 46, in __call__
+    x = layer(x, mask)
+        ^^^^^^^^^^^^^^
+  File "/Users/nhassen/opt/anaconda3/envs/AppleMLX/lib/python3.11/site-packages/mlx/nn/layers/transformer.py", line 136, in __call__
+    y = self.attention(y, y, y, mask)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/opt/anaconda3/envs/AppleMLX/lib/python3.11/site-packages/mlx/nn/layers/transformer.py", line 85, in __call__
+    B, L, D = queries.shape
+    ^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+Using device: Device(gpu, 0)

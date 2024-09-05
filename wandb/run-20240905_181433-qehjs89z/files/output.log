@@ -1,0 +1,13 @@
+
+<module 'mlx.core' from '/Users/nhassen/opt/anaconda3/envs/AppleMLX/lib/python3.11/site-packages/mlx/core.cpython-311-darwin.so'>
+Traceback (most recent call last):
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 144, in <module>
+    agent = DistributionalGFlowNet(input_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 55, in __init__
+    self.policy_net = TransformerNetwork(input_size, 4).to(device)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py", line 39, in __init__
+    self.transformer = nn.Transformer(
+                       ^^^^^^^^^^^^^^^
+TypeError: Transformer.__init__() got an unexpected keyword argument 'd_model'

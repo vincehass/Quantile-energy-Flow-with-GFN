@@ -1,0 +1,49 @@
+{
+    "os": "macOS-14.6.1-arm64-arm-64bit",
+    "python": "3.11.9",
+    "heartbeatAt": "2024-09-05T22:07:50.866554",
+    "startedAt": "2024-09-05T22:07:50.112543",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN/TFBind/WDB_results.py",
+    "codePathLocal": "TFBind/WDB_results.py",
+    "codePath": "TFBind/WDB_results.py",
+    "git": {
+        "remote": "https://github.com/vincehass/Quantile-energy-Flow-with-GFN.git",
+        "commit": "946013d049ffd80fa6d487a2dcbf9a0309731bb5"
+    },
+    "email": "nadhir.hassen@polymtl.ca",
+    "root": "/Users/nhassen/Documents/MLOPS/code/gihub/Quantile-energy-Flow-with-GFN",
+    "host": "6200L-210250-M.local",
+    "username": "nhassen",
+    "executable": "/Users/nhassen/opt/anaconda3/envs/AppleMLX/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3228,
+        "min": 600,
+        "max": 3228
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3228,
+            "min": 600,
+            "max": 3228
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 9.565597534179688
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M1 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
