@@ -4,9 +4,9 @@ Stochastic Rewards as Distributional Flows
 
 This repository `Quantile-Energy-Flow-with-GFlowNets` is focused on the implementation of Distributional Generative Flow Networks (GFlowNets) for local search. Specifically, the `distributional_flow.py` file located in the `grid` directory contains the implementation of a distributional version of GFlowNets designed to work on grid-based environments. This type of environment serves as a simplified testbed for evaluating the performance of GFlowNets under controlled conditions.
 
-### Overview of `distributional_flow.py`
+### Overview of `distributional flow`
 
-This file implements the core components of Distributional GFlowNets in a grid-based environment. Distributional GFlowNets extend the GFlowNet framework by modeling the flow function as a distribution rather than a deterministic or point-based value. This allows the network to generate diverse outputs and handle uncertainty in the environment, making it more robust in scenarios with stochastic rewards.
+This file implements the core components of Distributional GFlowNets in a grid-based environment and TFBIND for molecule generation. Distributional GFlowNets extend the GFlowNet framework by modeling the flow function as a distribution rather than a deterministic or point-based value. This allows the network to generate diverse outputs and handle uncertainty in the environment, making it more robust in scenarios with stochastic rewards.
 
 #### 1. **Imports and Dependencies**
 
@@ -64,4 +64,4 @@ The use of distributional loss functions adds complexity to this step, as gradie
 - **Trajectory Balance**: A core principle in GFlowNets ensuring that the flow into and out of states is balanced, which leads to consistent trajectory generation.
 - **Neural Networks**: Used to parameterize the policy and flow distributions. The networks are trained using gradient-based optimization to satisfy the GFlowNet objectives.
 
-In summary, `distributional_flow.py` implements a distributional extension of GFlowNets for grid-based environments. The script models the flow function as a distribution, introduces a corresponding loss function, and optimizes the model to generate trajectories that respect the GFlowNet flow balance constraints. By operating in a grid environment, this implementation provides a controlled setting to test and validate the performance of distributional GFlowNets.
+The script models the flow function as a distribution, introduces a corresponding loss function, and optimizes the model to generate trajectories that respect the GFlowNet flow balance constraints.

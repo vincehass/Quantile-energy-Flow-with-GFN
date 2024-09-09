@@ -7,7 +7,7 @@ import wandb
 from collections import Counter
 
 # Initialize WANDB
-wandb.init(project="distributional-gfn-tfbind", config={"learning_rate": 0.001, "epochs": 1000}, name="TFBIND")
+wandb.init(project="distributional-gfn-tfbind", config={"learning_rate": 0.001, "epochs": 100}, name="TFBIND", save_code=True)
 
 # Set default device to GPU if available, else CPU
 #mx.set_default_device(mx.gpu if mx.gpu.is_available() else mx.cpu)
@@ -125,7 +125,7 @@ class DistributionalGFlowNet:
             self.loss_history.append(float(loss))
             self.track_metrics(trajectories)
 
-            if epoch % 100 == 0:
+            if epoch % 10 == 0:
                 print(f"Epoch {epoch}, Loss: {loss}, Modes: {self.modes_history[-1]}, Diversity: {self.diversity_history[-1]}")
 
 class TFBindEnvironment:

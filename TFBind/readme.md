@@ -29,7 +29,3 @@
 
    - Initializes the environment and agent.
    - Trains the agent to generate molecules with higher binding affinities by mutating the sequences and learning the distributional flow.
-
-### Summary:
-
-This script represents a simplified setup for a molecule generation task similar to the TFBIND experiment in the Distributional-GFlowNets repository. The environment simulates molecule mutations, and the agent learns a policy using Distributional GFlowNets. This setup can be further extended to handle real binding affinity calculations and more complex molecular representations.
